@@ -120,3 +120,14 @@
     z-index: 99;
     display: block;
 }
+
+.call-to-action{
+    background-color: royalblue;
+}
+.buttons-area{
+    display: flex;
+}
+.cta-button > button{
+    border-radius: 3%;
+    background: red;
+}
