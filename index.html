@@ -5,24 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My web page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"> </script>
 </head>
 
 <body>
-    <nav class="navigation-menu">
-        <ul>
-            <li>
-                home
-            </li>
-            <li>
-                Other
-            </li>
+    <nav>
+        <ul class="navbar-flex">
+            <li>Home</li>
+            <li>Profile</li>
+            <li>Logout</li>
         </ul>
-        <div onclick="openMenu()">
-            ☰
-        </div>
+        <a id="hamburger-menu" onclick="openMenu()">☰ </a>
+
     </nav>
+    <main>
+            <dialog id="favDialog">
+                      <form method="dialog">
+                        <p><label>Favorite animal:
+                          <select>
+                            <option></option>
+                            <option>Brine shrimp</option>
+                            <option>Red panda</option>
+                            <option>Spider monkey</option>
+                          </select>
+                        </label></p>
+                        <menu>
+                          <button value="cancel">Cancel</button>
+                        </menu>
+                      </form>
+                    </dialog>
+        <div class="hero-image">
+            <p>Indian Tourism</p>
+            <p>Welcome to India</p>
+
+        </div>
+        <section class="heading">
+            <h1>Explore the Nation</h1>
+            <div class="underline">
+                <div class="line"></div>
+            </div>
+        </section>
+        <section class="prod-images">
+            <div class="image-album">
+                <div onclick="createPortal(this)"><img
+                        src="https://cdn.pixabay.com/photo/2019/08/24/22/20/tea-4428502_960_720.jpg" />
+                    <div class="overlay-text">
+                        enter text here
+                    </div>
+                </div>
+                <div><img src="https://cdn.pixabay.com/photo/2016/02/18/20/17/hills-1207998_960_720.jpg" /></div>
+                <div><img src="https://cdn.pixabay.com/photo/2016/02/18/20/17/hills-1207998_960_720.jpg" /></div>
+                <div><img src="https://cdn.pixabay.com/photo/2016/02/18/20/17/hills-1207998_960_720.jpg" /></div>
+                <div><img src="https://cdn.pixabay.com/photo/2016/02/18/20/17/hills-1207998_960_720.jpg" />
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>
