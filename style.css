@@ -1,3 +1,4 @@
+/* Navigation */
 .navigation-menu ul{
     background: rgb(235, 238, 232);
     display: flex;
@@ -5,13 +6,13 @@
 }
 .navigation-menu ul >li{
 list-style:none;
-margin-left:2em;
+margin-left:2em; 
 }
 *{
     box-sizing: border-box;
 }
 @media screen and (max-width:600px){
     .navigation-menu ul{
-        display:block;
+        visibility:hidden;
     }
 }
