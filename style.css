@@ -126,6 +126,7 @@
 }
 .buttons-area{
     display: flex;
+    margin: auto;
 }
 .cta-button > button{
     border-radius: 3%;
